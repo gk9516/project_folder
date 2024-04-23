@@ -9,7 +9,7 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import LSTM, Dense, Dropout
 import joblib
 
-model =load_model(r'C:\Users\ACER\Desktop\project_folder\stock_prediction.keras')
+model =load_model('stock_prediction.keras')
 st.header('Stock Market Predictor')
 
 stock = st.text_input('Enter Stock Symbol','AAPL')
