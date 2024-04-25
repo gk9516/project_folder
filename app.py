@@ -87,8 +87,8 @@ for i, (date, price) in enumerate(zip(next_six_days, predicted_prices), start=1)
 
 rmse = np.sqrt(mean_squared_error(actual_prices, predicted_prices))
 print("Root Mean Square Error (RMSE):", rmse)
-st.subheader('Root Mean Square Error (RMSE)')
-st.text(rmse)
+#st.subheader('Root Mean Square Error (RMSE)')
+#st.text(rmse)
 
 st.header('Conclusion')
 st.write("The LSTM model provide predictions for future stock prices based on historical data. While these predictions offer valuable insights, it's important to note that they may not always accurately reflect actual market conditions. Factors such as unforeseen events, economic indicators, and investor sentiment can influence stock prices in ways that models may not capture. Therefore, these predictions should be used as tools to inform decision-making rather than as definitive forecasts. By combining these models with fundamental analysis and market expertise, investors can make more informed decisions in navigating the dynamic landscape of the stock market.")
